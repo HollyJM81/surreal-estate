@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from "react";
 import { Link } from "react-router-dom";
 import img from "../real-estate-logo.png";
