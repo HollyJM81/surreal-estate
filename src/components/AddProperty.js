@@ -54,6 +54,7 @@ const AddProperty = () => {
 					Bedrooms
 					<select
 						id="bedrooms"
+						type="number"
 						name="bedrooms"
 						value={fields.bedrooms}
 						onChange={handleFieldChange}
@@ -70,6 +71,7 @@ const AddProperty = () => {
 					Bathrooms
 					<select
 						id="bathrooms"
+						type="number"
 						name="bathrooms"
 						value={fields.bathrooms}
 						onChange={handleFieldChange}
