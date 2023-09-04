@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
+import CurrencyInput from "react-currency-input-field";
+
+const axios = require("axios").default;
 
 const AddProperty = () => {
 	const initialState = {
@@ -26,8 +29,9 @@ const AddProperty = () => {
 					Title
 					<input
 						id="title"
+						type=""
 						name="title"
-						value="fields.title"
+						defaultValue=""
 						onChange={handleFieldChange}
 					/>
 				</label>
@@ -85,12 +89,14 @@ const AddProperty = () => {
 
 				<label htmlFor="price">
 					Price
-					<span>$</span>
 					<input
-						type="number"
 						id="price"
 						name="price"
-						value="fields.price"
+						placeholder="Please enter a number"
+						// prefix="£"
+						// defaultValue={1000}
+						// decimalsLimit={2}
+						value={fields.price}
 						onChange={handleFieldChange}
 					/>
 				</label>
@@ -114,8 +120,9 @@ const AddProperty = () => {
 					Email
 					<input
 						id="email"
+						type="email"
 						name="email"
-						value="fields.email"
+						defaultValue=""
 						onChange={handleFieldChange}
 					/>
 				</label>
