@@ -2,3 +2,62 @@
 	padding: 20px;
 	color: black;
 }
+
+.add-property__title {
+	padding: 40px;
+	color: black;
+	font-size: 60px;
+}
+
+.add-property__form {
+	box-sizing: border-box;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem;
+}
+
+.add-property__category {
+	font-size: 40px;
+	padding-bottom: 40px;
+}
+
+.add-property__submit-btn {
+	font-size: 50px;
+	padding: 15px;
+	background-color: #fad03b;
+	width: 30%;
+	margin: auto;
+	border: 0px;
+}
+
+.add-property__submit-btn:active {
+	color: aliceblue;
+}
+
+input,
+select,
+label,
+textarea {
+	font-family: inherit;
+	font-size: 30px;
+	padding: 20px;
+	color: #404040;
+}
+
+input,
+select {
+	border: 2px solid #404040;
+	background-color: white;
+	border-radius: 0.25rem;
+	margin-top: 20px;
+	font: 1.25rem / 1.5 sans-serif;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+}
+
+select {
+	max-width: 20%;
+}

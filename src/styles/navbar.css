@@ -21,6 +21,7 @@
 	margin: 10px;
 	padding: 1em;
 	list-style-type: none;
+	font-size: 40px;
 }
 
 a.navbar-links-text:link {
@@ -34,11 +35,6 @@ a.navbar-links-text:visited {
 	font-weight: 700;
 }
 a.navbar-links-text:active {
-	color: #404040;
-	font-weight: 700;
-}
-a.navbar-links-text:hover {
 	color: aliceblue;
-	text-decoration: none;
-	font-weight: 800;
+	font-weight: 700;
 }

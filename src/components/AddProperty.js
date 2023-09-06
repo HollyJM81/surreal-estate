@@ -24,7 +24,8 @@ const AddProperty = () => {
 
 	return (
 		<div className="add-property">
-			<form onSubmit={handleAddProperty}>
+			<h1 className="add-property__title">Add your property details here</h1>
+			<form onSubmit={handleAddProperty} className="add-property__form">
 				<label htmlFor="title">
 					Title
 					<input
@@ -92,7 +93,7 @@ const AddProperty = () => {
 					<input
 						id="price"
 						name="price"
-						placeholder="Please enter a number"
+						placeholder="Please enter a price"
 						// prefix="£"
 						// defaultValue={1000}
 						// decimalsLimit={2}
@@ -126,7 +127,9 @@ const AddProperty = () => {
 						onChange={handleFieldChange}
 					/>
 				</label>
-				<button type="submit">Add</button>
+				<button type="submit" className="add-property__submit-btn">
+					Add
+				</button>
 			</form>
 		</div>
 	);
