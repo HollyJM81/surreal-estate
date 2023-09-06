@@ -17,11 +17,6 @@
 	gap: rem;
 }
 
-.add-property__category {
-	font-size: 40px;
-	padding-bottom: 40px;
-}
-
 .add-property__submit-btn {
 	font-size: 50px;
 	padding: 15px;

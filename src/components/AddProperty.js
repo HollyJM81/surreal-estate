@@ -1,21 +1,32 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
-import CurrencyInput from "react-currency-input-field";
 
-const axios = require("axios").default;
+import axios from "axios";
 
 const AddProperty = () => {
 	const initialState = {
 		fields: {
 			title: "",
 			city: "Manchester",
+			type: "Flat",
+			bedrooms: 0,
+			bathrooms: 0,
+			price: 0,
+			email: "",
 		},
 	};
 
 	const [fields, setFields] = useState(initialState.fields);
 	const handleAddProperty = (event) => {
 		event.preventDefault();
-		console.log(fields);
+		axios
+			.post("http://localhost:4000/api/v1/PropertyListing", fields)
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 	};
 
 	const handleFieldChange = (event) => {
