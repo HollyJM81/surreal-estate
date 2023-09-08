@@ -1,28 +1,23 @@
 .Alert--success {
 	background-color: green;
-	padding: 50px;
-	font-size: 40px;
+	float: right;
+	padding: 20px;
+	margin: auto;
+	font-size: 30px;
+	width: 250px;
 	color: white;
 	display: inline-block;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	transform: rotate(-40deg);
-	transform-origin: center;
 }
 
 .Alert--error {
 	visibility: hidden;
+	position: relative;
 	background-color: red;
-	padding: 50px;
-	font-size: 40px;
+	padding: 20px;
+	font-size: 30px;
+	width: 250px;
 	color: white;
 	display: inline-block;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	transform: rotate(-40deg);
-	transform-origin: center;
 }
 
 @keyframes alertBox {

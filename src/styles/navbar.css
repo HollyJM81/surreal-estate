@@ -1,8 +1,8 @@
 .navbar {
 	background-color: #fad03b;
-	border-bottom: violet;
 	height: 30vh;
 	display: flex;
+	padding: 40px;
 	justify-content: space-between;
 }
 

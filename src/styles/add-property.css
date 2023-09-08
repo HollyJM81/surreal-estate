@@ -1,6 +1,8 @@
 .add-property {
 	padding: 20px;
 	color: black;
+	width: 60%;
+	margin: auto;
 }
 
 .add-property__title {
@@ -12,18 +14,27 @@
 .add-property__form {
 	box-sizing: border-box;
 	padding: 2rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.add-property__submit {
+	margin: auto;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .add-property__submit-btn {
 	font-size: 50px;
 	padding: 15px;
+	margin-right: 40px;
 	background-color: #fad03b;
-	width: 30%;
-	margin: auto;
 	border: 0px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
 }
 
 .add-property__submit-btn:active {
