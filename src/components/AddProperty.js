@@ -54,7 +54,11 @@ const AddProperty = () => {
 		<div className="add-property">
 			<h1 className="add-property__title">Add your property details here</h1>
 
-			<form onSubmit={handleAddProperty} className="add-property__form">
+			<form
+				onSubmit={handleAddProperty}
+				className="add-property__form"
+				data-testid="add-property-form"
+			>
 				<label htmlFor="title">
 					Title
 					<input

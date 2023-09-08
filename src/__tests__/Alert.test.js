@@ -1,8 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Alert from "../components/Alert";
-import AddProperty from "../components/AddProperty";
-import { Fragment } from "react";
 
 test("displays a success message", () => {
 	const { getByText } = render(<Alert message="Property Added!" success />);

@@ -1,25 +1,3 @@
-# Surreal Estate
-
-## A single-page application property search engine, built using React
-
-## Concepts and technologies used
-
-- React
-
-- Jest
-
-- Single Page Application (SPA)
-
-- Client-side Routing
-
-- Controlled Inputs
-
-- HTTP Requests
-
-- API Interaction
-
-- OAuth
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -32,3 +10,9 @@ Launches the test runner in the interactive watch mode.\
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
+
+## to-do in the future
+
+- refactor the "Property Added" alert to be a dismissable modal, or have a
+  timeout.
+- test the background color of the alert
